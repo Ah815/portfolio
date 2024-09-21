@@ -16,9 +16,15 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <button className="icon-button" onClick={() => window.open('https://facebook.com', '_blank')}>
+                <img src={navIcon1} alt="Facebook Icon" />
+              </button>
+              <button className="icon-button" onClick={() => window.open('https://twitter.com', '_blank')}>
+                <img src={navIcon2} alt="Twitter Icon" />
+              </button>
+              <button className="icon-button" onClick={() => window.open('https://instagram.com', '_blank')}>
+                <img src={navIcon3} alt="Instagram Icon" />
+              </button>
             </div>
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
